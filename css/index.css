@@ -22,13 +22,37 @@ body {
   border-radius: 0.5em;
 } */
 
-/* using display grid */
-.top{
+/* using display grid no responsive*/
+/* .top{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: .5em;
   
+} */
+
+/* using display grid when min width 40em will responsive */
+@media screen and (min-width:40em){
+  .top{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5em;
+    
+  }
 }
+
+@media screen and (min-width:64em){
+  .top{
+ 
+    grid-template-columns: 1fr 1fr;
+
+    
+  }
+
+  @media screen and (min-width:78em){
+    .top{
+      grid-template-columns: 1fr 1fr 1fr;
+
+    }
 
 .news-lead {
   padding: 0 1em;
